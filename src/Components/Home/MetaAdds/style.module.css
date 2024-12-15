@@ -1,0 +1,213 @@
+.featureCard {
+  border-radius: 17px;
+  background-color: rgba(223, 255, 223, 1);
+  width: 100%;
+  padding: 38px 37px;
+}
+
+.cardContent {
+  gap: 20px;
+  display: flex;
+}
+
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 16%;
+  margin-left: 0;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  aspect-ratio: 1;
+  width: 67px;
+  align-self: stretch;
+  justify-content: center;
+  margin: auto 0;
+  padding: 21px 13px;
+}
+
+.backgroundImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.featureIcon {
+  aspect-ratio: 1.32;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 84%;
+  margin-left: 20px;
+}
+
+.textContent {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  font-family: Creato Display, -apple-system, Roboto, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 1);
+}
+
+.title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  align-self: start;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 11px;
+}
+
+@media (max-width: 991px) {
+  .featureCard {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .cardContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .iconWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .iconContainer {
+    width: 60px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .backgroundImage {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .featureIcon {
+    width: 100%;
+  }
+
+  .textWrapper {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .textContent {
+    margin-top: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 8px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Centers children vertically (if needed) */
+  width: 100%;
+  max-width: 1180px;
+  margin: 136px auto 0; /* Centers the container itself horizontally */
+  padding: 0 20px; /* Adds padding for small screens */
+}
+.heading {
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  align-self: center;
+  margin-top: 136px;
+  font: 700 48px/1 Creato Display, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.headingRegular {
+  font-weight: 400;
+}
+
+.headingItalic {
+  font-style: italic;
+}
+
+.featuresContainer {
+  margin-top: 49px;
+  width: 100%;
+  max-width: 1118px;
+}
+
+.featuresGrid {
+  gap: 20px;
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 0;
+}
+
+.columnRight {
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 100%;
+    margin: 40px 10px 0 0;
+  }
+
+  .heading {
+    max-width: 100%;
+    margin-top: 40px;
+    font-size: 40px;
+  }
+
+  .featuresContainer {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .featuresGrid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .columnRight {
+    margin-left: 0;
+  }
+}

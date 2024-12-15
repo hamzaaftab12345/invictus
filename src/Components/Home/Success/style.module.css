@@ -1,0 +1,134 @@
+.successStories {
+  padding: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center; /* Center align the title */
+}
+
+.highlight {
+  color: black; /* Color for highlighting */
+  font-style: italic; /* Make the text italic */
+}
+
+.card {
+  background-color: #74ff74; /* Light green color */
+  border-radius: 32px;
+  padding: 1.5rem;
+  text-align: left; /* Align content to the left */
+  width: 100%; /* Ensure cards take full width of their container */
+  height: auto; /* Let the height be automatic based on content */
+  margin: 0.5rem; /* Small gap between cards */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Ensure content starts from the top */
+}
+
+.arrow {
+  margin-top: auto; /* Push the arrow to the bottom of the card */
+  text-align: start; /* Align the arrow image to the left */
+}
+
+.arrow img {
+  width: 76px;
+  display: block; /* Ensures the image is displayed as a block element */
+  margin-left: 0; /* Remove any margin on the left */
+}
+
+.card p,
+.card h3,
+.card small {
+  text-align: left; /* Left-align text inside the card */
+}
+
+.card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.card small {
+  font-size: 1rem;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .successStories {
+    padding: 2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .title {
+    font-size: 1.25rem; /* Adjust title font size on tablets */
+  }
+
+  .highlight {
+    font-size: 1.1rem; /* Adjust highlight font size on tablets */
+  }
+
+  .card {
+    width: 100%; /* Make cards full width on small screens */
+    height: auto; /* Allow cards to adjust their height */
+    padding: 1rem; /* Reduce padding inside cards */
+    margin: 0.5rem; /* Keep small margin between cards */
+  }
+
+  .card h3 {
+    font-size: 1.5rem; /* Reduce the font size of the heading */
+  }
+
+  .card small {
+    font-size: 0.9rem; /* Adjust small text size */
+  }
+
+  .arrow img {
+    width: 60px; /* Resize arrow image on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .successStories {
+    padding: 2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .title {
+    font-size: 1.1rem; /* Adjust title font size on mobile */
+  }
+
+  .highlight {
+    font-size: 1rem; /* Adjust highlight font size on mobile */
+  }
+
+  .card {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Allow cards to adjust their height */
+    padding: 1rem; /* Reduce padding inside cards */
+    margin: 0.5rem; /* Keep small margin between cards */
+  }
+
+  .card h3 {
+    font-size: 1.25rem; /* Smaller heading font size on mobile */
+  }
+
+  .card small {
+    font-size: 0.85rem; /* Smaller small text size on mobile */
+  }
+
+  .arrow img {
+    width: 50px; /* Smaller arrow image on mobile */
+  }
+}
+
+/* Center-align the card container and ensure the gap */
+.row.justify-content-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* Adjust gap between the cards */
+}

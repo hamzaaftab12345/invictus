@@ -1,0 +1,56 @@
+.packageContainer {
+  background-color: #01201c; /* Dark green background */
+  color: white;
+  width: 100%;
+}
+
+.highlight {
+  color: #32cd32; /* Bright green for highlight */
+}
+
+.featuresList {
+  margin-top: 20px;
+}
+
+.featureItem {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #37e137;
+}
+
+/* Override table styles */
+/* Override table styles */
+.tableContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table td:first-child {
+  border-right: none !important; /* Remove right border of the first td */
+}
+
+.table {
+  width: 35%;
+  margin: 0 auto;
+  background-color: #01201c !important; /* Table background color */
+}
+
+.table td,
+.table th {
+  padding: 0.5rem !important; /* Cell padding */
+  color: #ffffff !important; /* Text color */
+  background-color: #01201c !important; /* Row background color */
+  border-bottom-width: 1px !important; /* Border width */
+  box-shadow: inset 0 0 0 9999px #01201c !important; /* Background shadow for table rows */
+}
+
+.table-bordered {
+  border: 1px solid #01201c !important; /* Table border color */
+}
+
+.text-success {
+  color: #2ecc71 !important; /* Custom green for success check */
+}

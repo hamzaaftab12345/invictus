@@ -1,0 +1,13 @@
+.logo {
+  width: 230px;
+  height: 55px;
+}
+
+.navLink {
+  font-size: 20.26px;
+  line-height: 24.07px;
+}
+
+.navLink:hover {
+  color: #007bff;
+}

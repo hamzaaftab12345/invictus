@@ -1,0 +1,168 @@
+.heroContainer {
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.heroWrapper {
+  background-color: rgba(255, 249, 249, 1);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0px 70px;
+  padding-bottom: 50px;
+}
+
+.contentContainer {
+  margin-bottom: -31px;
+  width: 100%;
+  max-width: 1338px;
+}
+
+.flexContainer {
+  gap: 20px;
+  display: flex;
+}
+
+.textColumn {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 55%;
+  margin-left: 0;
+}
+
+.textContent {
+  display: flex;
+  margin-top: 58px;
+  flex-grow: 1;
+  flex-direction: column;
+  font-family: Creato Display, -apple-system, Roboto, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 1);
+}
+
+.mainHeading {
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 90px;
+}
+
+.headingFaster {
+  font-family: Faster One, sans-serif;
+  font-weight: 400;
+  font-size: 79px;
+  line-height: 92px;
+  letter-spacing: -12.64px;
+}
+
+.headingBold {
+  font-weight: 800;
+  font-style: italic;
+}
+
+.headingHighlight {
+  color: rgba(22, 98, 199, 1);
+}
+
+.description {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  margin: 61px 23px 0 0;
+}
+
+.ctaButton {
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 1);
+  align-self: flex-start;
+  margin-top: 61px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 26px 31px;
+  font: 500 20px/1 Onest, sans-serif;
+  cursor: pointer;
+  border: none;
+}
+
+.imageColumn {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 45%;
+  margin-left: 20px;
+}
+
+.heroImage {
+  aspect-ratio: 0.85;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+@media (max-width: 991px) {
+  .heroWrapper {
+    max-width: 100%;
+    padding: 0px 20px;
+    padding-bottom: 30px;
+  }
+
+  .contentContainer {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .flexContainer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .textColumn {
+    width: 100%;
+  }
+
+  .textContent {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .mainHeading {
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .description {
+    max-width: 100%;
+    margin: 40px 10px 0 0;
+  }
+
+  .ctaButton {
+    margin-top: 40px;
+    padding: 20px;
+  }
+
+  .imageColumn {
+    width: 100%;
+  }
+
+  .heroImage {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

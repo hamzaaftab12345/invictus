@@ -1,0 +1,84 @@
+.footer {
+  display: flex;
+  align-items: start;
+  gap: 40px 258px;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 94px 336px 94px 352px;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding: 0 20px;
+  }
+}
+
+.addressColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.logo {
+  aspect-ratio: 5.95;
+  object-fit: contain;
+  object-position: center;
+  width: 167px;
+  max-width: 100%;
+}
+
+.address {
+  color: rgb(21, 21, 21);
+  letter-spacing: -0.02px;
+  margin-top: 28px;
+  font: 400 19px Satoshi Variable, -apple-system, Roboto, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+.socialIcons {
+  display: flex;
+  margin-top: 28px;
+  align-items: start;
+  gap: 19px;
+  justify-content: start;
+}
+
+.socialIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 35px;
+}
+
+.linkColumn {
+  display: flex;
+  flex-direction: column;
+  font-family: Satoshi Variable, -apple-system, Roboto, Helvetica, sans-serif;
+  color: rgb(21, 21, 21);
+  letter-spacing: -0.02px;
+  justify-content: start;
+}
+
+.columnTitle {
+  font-size: 23px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.linkList {
+  display: flex;
+  margin-top: 28px;
+  flex-direction: column;
+  font-size: 19px;
+  font-weight: 400;
+  gap: 14px;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
