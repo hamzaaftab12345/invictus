@@ -1,0 +1,151 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.heading {
+    color: #fff;
+    text-align: center;
+    font: 700 60px/1 'Creato Display', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.headingLight {
+    font-weight: 400;
+}
+
+.headingBold {
+    font-weight: 700;
+}
+
+.imageGrid {
+    align-self: stretch;
+    margin-top: 91px;
+    width: 100%;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    display: flex;
+    justify-content: flex-start;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Hide scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
+.imageGrid::-webkit-scrollbar {
+    display: none;
+}
+
+.imageContainer {
+    display: flex;
+    gap: 80px;
+    flex-wrap: nowrap;
+    /* Prevent wrapping of items */
+}
+
+.imageColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 100%;
+    /* Ensure it takes up the full width of the container */
+}
+
+.imageCard {
+    aspect-ratio: 2;
+    object-fit: contain;
+    object-position: center;
+    width: 750px;
+    max-width: 750px;
+    border-radius: 20px;
+    box-shadow: 12px 12px 12px  rgb(2, 255, 58);
+    flex-shrink: 0;
+    /* Prevent the images from shrinking */
+}
+
+.button {
+    border-radius: 12px;
+    background-color: rgb(2, 255, 58);
+    margin-top: 112px;
+    width: 330px;
+    color: #000;
+    text-align: center;
+    padding: 19px;
+    font: 500 33px/1 'Onest', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .heading {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+
+    .imageGrid {
+        margin-top: 40px;
+    }
+
+    .imageContainer {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .imageColumn {
+        width: 100%;
+        /* Take up full width for each image */
+    }
+
+    .button {
+        margin-top: 40px;
+        padding: 19px 20px;
+        width: 90%;
+        /* Makes button responsive */
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 30px;
+        /* Further reduced font size */
+    }
+
+    .button {
+        font-size: 24px;
+        padding: 16px 18px;
+    }
+
+    /* Ensure only one image is displayed at a time on mobile */
+    .imageGrid {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .imageCard{
+    width: 250px;
+    }
+
+    .imageColumn {
+        width: 100%;
+        /* Ensure each image takes up 100% of the container width */
+    }
+}

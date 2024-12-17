@@ -15,6 +15,8 @@ import JoinInvictus from "@/Components/Home/JoinVictus/JoinInvictus";
 import cardsData from "@/Constants/Home/JoinInvictus/joininvData";
 import ContactSection from "@/Components/Home/Contact/ContactSelection";
 import contactButtonsData from "@/Constants/Home/Contact/contactButtonsData";
+import ContactForm from "@/Components/Home/ContactWithUs/ContactForm";
+import MetaSuccess from "@/Components/Home/SuccessGallery/SuccessGallery";
 
 export const HomePageComponent = () => {
   return (
@@ -41,8 +43,10 @@ export const HomePageComponent = () => {
         discountText={promotionData.discountText}
         promotionDescription={promotionData.promotionDescription}
       />
-      <JoinInvictus cardsData={cardsData} />
-      <ContactSection contactButtons={contactButtonsData} />
+      {/* <JoinInvictus cardsData={cardsData} />
+      <ContactSection contactButtons={contactButtonsData} /> */}
+      <MetaSuccess />
+      <ContactForm />
     </>
   );
 };
