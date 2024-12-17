@@ -15,7 +15,7 @@ export default function PageBanner({
             <div className={styles.textColumn}>
               <div className={styles.textContent}>
                 <h1 className={styles.mainHeading}>
-                  <span className={styles.headingBold}>Supercharge</span>
+                  <span className={styles.headingBold2}>Supercharge</span>
                   <br />
                   Your <span className={styles.headingBold}>Business </span>
                   <br />

@@ -17,6 +17,10 @@ import ContactSection from "@/Components/Home/Contact/ContactSelection";
 import contactButtonsData from "@/Constants/Home/Contact/contactButtonsData";
 import ContactForm from "@/Components/Home/ContactWithUs/ContactForm";
 import MetaSuccess from "@/Components/Home/SuccessGallery/SuccessGallery";
+import { Pricing } from "@/Components/Home/Pricing/Pricing";
+import { pricing } from "@/Constants/Home/pricing/pricing";
+import { FAQ } from "@/Components/Home/Faq";
+import faq from "@/Constants/Home/faq/faq";
 
 export const HomePageComponent = () => {
   return (
@@ -46,7 +50,25 @@ export const HomePageComponent = () => {
       {/* <JoinInvictus cardsData={cardsData} />
       <ContactSection contactButtons={contactButtonsData} /> */}
       <MetaSuccess />
+
+      <Pricing
+        title={pricing.title}
+        buttonText={pricing.buttonText}
+        featuresList1={pricing.featuresList1}
+        featuresList2={pricing.featuresList2}
+        price={pricing.price}
+        priceSubTitle={pricing.priceSubTitle}
+        secondButtonText={pricing.secondButtonText}
+        svg={pricing.svg}
+        titleSpan={pricing.titleSpan}
+      />
       <ContactForm />
+      <FAQ
+        title={faq?.title}
+        data={faq?.data}
+        iconCollapsed={faq?.iconCollapsed}
+        iconOpen={faq.iconOpen}
+      />
     </>
   );
 };
