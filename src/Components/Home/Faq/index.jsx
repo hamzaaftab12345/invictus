@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
-import useScreenWidth from "@/Utils/screenWidth";
+import useScreenWidth from "@/utils/screenWidth";
 import { Title } from "@/Common/Title";
 import styles from "./styles.module.css";
 
