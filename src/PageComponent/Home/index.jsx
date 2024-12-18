@@ -21,6 +21,8 @@ import { Pricing } from "@/Components/Home/Pricing/Pricing";
 import { pricing } from "@/Constants/Home/pricing/pricing";
 import { FAQ } from "@/Components/Home/Faq";
 import faq from "@/Constants/Home/faq/faq";
+import { WhyChooseUs } from "@/Components/Home/WhyChooseUs/WhyChooseUs";
+import { whyChooseUs } from "@/Constants/Home/whychooseus/whyChooseUs_data";
 
 export const HomePageComponent = () => {
   return (
@@ -35,6 +37,13 @@ export const HomePageComponent = () => {
         title="Why Choose"
         subtitle="Meta Ads for Your Business?"
         features={features}
+      />
+      <WhyChooseUs
+        data={whyChooseUs.data}
+        image={whyChooseUs.image}
+        subTitle={whyChooseUs.subTitle}
+        title={whyChooseUs.title}
+        titleSpan={whyChooseUs.titleSpan}
       />
       <Industries heading={"Serving Industries"} industries={industries} />
       <MetaAdsPackage {...metaAdsData} />
